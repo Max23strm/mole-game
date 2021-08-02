@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url(img/mole-game/cursor.png), default;
+    
+}
+
+main {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    background-image: url(img/mole-game/background.png);
+
+    .caja-gusano {
+        width: 90vw;
+        margin: 0px auto;
+        
+        .worm {
+            overflow: hidden;
+            width: 5%;
+            transition: width .5s ease-in-out;
+            
+            img {
+                width: 90vw;
+                display: block;
+                margin: 0px auto;
+                padding: 15px 0;
+            }
+        }
+    }
+    
+    
+    .juego {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 auto;
+        
+        .agujero {
+            background-color: black;
+            border-radius: 50%;
+            width: 18vw;
+            height: 18vw;
+            margin: 1rem;
+            position: relative;
+            
+            .topo {
+                width: 25vw;
+                position: absolute;
+                transform: translateX(-13.5%);
+            }
+        }
+        
+    }
+}
+
+.win {
+    height: 100vh;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+.hambre:hover {
+    cursor: url(img/mole-game/cursor-worm.png), default;
+}

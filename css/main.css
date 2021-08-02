@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  cursor: url(img/mole-game/cursor.png), default;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  background-image: url(img/mole-game/background.png);
+}
+
+main .caja-gusano {
+  width: 90vw;
+  margin: 0px auto;
+}
+
+main .caja-gusano .worm {
+  overflow: hidden;
+  width: 5%;
+  -webkit-transition: width .5s ease-in-out;
+  transition: width .5s ease-in-out;
+}
+
+main .caja-gusano .worm img {
+  width: 90vw;
+  display: block;
+  margin: 0px auto;
+  padding: 15px 0;
+}
+
+main .juego {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+}
+
+main .juego .agujero {
+  background-color: black;
+  border-radius: 50%;
+  width: 18vw;
+  height: 18vw;
+  margin: 1rem;
+  position: relative;
+}
+
+main .juego .agujero .topo {
+  width: 25vw;
+  position: absolute;
+  -webkit-transform: translateX(-13.5%);
+          transform: translateX(-13.5%);
+}
+
+.win {
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.hambre:hover {
+  cursor: url(img/mole-game/cursor-worm.png), default;
+}
+/*# sourceMappingURL=main.css.map */
