@@ -6,14 +6,14 @@
 }
 
 body {
-  cursor: url(img/mole-game/cursor.png), default;
+  cursor: url(/img/mole-game/cursor.png), default;
 }
 
 main {
   width: 100vw;
   height: 100vh;
   background-color: green;
-  background-image: url(img/mole-game/background.png);
+  background-image: url(/img/mole-game/background.png);
 }
 
 main .caja-gusano {
@@ -77,6 +77,6 @@ main .juego .agujero .topo {
 }
 
 .hambre:hover {
-  cursor: url(img/mole-game/cursor-worm.png), default;
+  cursor: url(/img/mole-game/cursor-worm.png), default;
 }
 /*# sourceMappingURL=main.css.map */
